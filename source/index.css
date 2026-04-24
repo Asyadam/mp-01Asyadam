@@ -24,7 +24,6 @@ body {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* SECTION */
 .section {
   padding: 80px 0;
 }
@@ -33,24 +32,22 @@ html {
   scroll-behavior: smooth;
 }
 
-/* posisi parent supaya relatif */
 #videoCarousel {
   position: relative;
 }
 
 /* panah kiri */
 #videoCarousel .carousel-control-prev {
-  left: -60px; /* keluar ke kiri */
+  left: -60px;
   width: auto;
 }
 
 /* panah kanan */
 #videoCarousel .carousel-control-next {
-  right: -60px; /* keluar ke kanan */
+  right: -60px;
   width: auto;
 }
 
-/* biar icon lebih jelas */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.6);
