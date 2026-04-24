@@ -1,0 +1,32 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  height: 100vh;
+}
+
+.login-card {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #4e73df;
+}
+
+.btn-primary {
+  background-color: #4e73df;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2e59d9;
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+input.success {
+  border: 1px solid green;
+}

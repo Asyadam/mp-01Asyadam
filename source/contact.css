@@ -1,0 +1,37 @@
+/* HERO */
+.hero-contact {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+}
+
+/* INFO BOX */
+.info-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.info-box:hover {
+  transform: translateY(-5px);
+}
+
+/* MAP */
+.map-container {
+  height: 100%;
+  min-height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* WA CARD */
+.wa-card {
+  background: #fff;
+  border-radius: 15px;
+}

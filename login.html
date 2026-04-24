@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="source/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div
+      class="container h-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="col-md-4">
+        <div class="card login-card p-4">
+          <h3 class="text-center mb-4">SYADAM HOSPITAL LOGIN 👋</h3>
+
+          <form onsubmit="loginUser(event)">
+            <p
+              id="errorMsg"
+              class="text-danger small mt-2"
+              style="display: none"
+            ></p>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input
+                type="password"
+                id="password"
+                class="form-control"
+                placeholder="Enter password"
+              />
+            </div>
+
+            <div class="d-flex justify-content-between mb-3">
+              <div><input type="checkbox" /> Remember</div>
+            </div>
+
+            <button class="btn btn-primary w-100">Login</button>
+
+            <p class="text-center mt-3">
+              Don't have an account?
+              <a href="register.html" class="text-decoration-none">Register</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="source/index.js"></script>
+  </body>
+</html>

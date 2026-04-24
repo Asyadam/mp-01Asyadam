@@ -1,0 +1,74 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+}
+
+/* GLASS */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+}
+
+/* INPUT */
+.input-modern {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+}
+
+.input-modern::placeholder {
+  color: #ccc;
+}
+
+/* GENDER BUTTON */
+.gender-btn {
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  transition: 0.3s;
+}
+
+.gender-btn i {
+  font-size: 24px;
+}
+
+/* HOVER */
+.gender-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* ACTIVE */
+.gender-btn.active {
+  background: #0d6efd;
+  transform: scale(1.1);
+}
+
+/* PROGRESS */
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  height: 20px;
+}
+
+.progress-bar {
+  transition: 0.5s;
+}
+
+/* TABLE */
+.table {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+thead {
+  background: rgba(0, 0, 0, 0.5);
+}

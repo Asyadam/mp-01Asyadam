@@ -1,0 +1,32 @@
+/* HERO */
+.hero-services {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+}
+
+/* SERVICE CARD */
+.service-card {
+  border-radius: 15px;
+  background: #fff;
+  transition: 0.3s;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ICON */
+.icon {
+  font-size: 40px;
+}
+
+/* CTA */
+.cta-section {
+  background: linear-gradient(135deg, #0d6efd, #0a58ca);
+}

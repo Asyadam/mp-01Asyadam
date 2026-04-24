@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator - RS Syadam</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="source/bmi.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">RS SYADAM</a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang_kami.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">BMI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow-1">
+      <!-- HEADER -->
+      <section class="text-center py-5 text-white">
+        <h1 class="fw-bold">BMI Calculator</h1>
+        <p class="text-light">Cek kondisi tubuh kamu</p>
+      </section>
+
+      <!-- FORM -->
+      <div class="container pb-5">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
+            <div class="glass p-4 shadow-lg">
+              <h4 class="text-center mb-4">Input Data</h4>
+
+              <!-- NAMA -->
+              <input
+                type="text"
+                id="name"
+                class="form-control input-modern mb-2"
+                placeholder="Nama"
+              />
+
+              <!-- GENDER BUTTON -->
+              <div class="mb-3">
+                <label class="mb-2">Jenis Kelamin</label>
+
+                <div class="d-flex gap-4">
+                  <button
+                    type="button"
+                    class="gender-btn"
+                    onclick="setGender('Laki-laki', this)"
+                  >
+                    <i class="bi bi-gender-male"></i>
+                    <span>Laki-laki</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="gender-btn"
+                    onclick="setGender('Perempuan', this)"
+                  >
+                    <i class="bi bi-gender-female"></i>
+                    <span>Perempuan</span>
+                  </button>
+                </div>
+              </div>
+
+              <input
+                type="number"
+                id="age"
+                class="form-control input-modern mb-2"
+                placeholder="Umur"
+              />
+              <input
+                type="number"
+                id="height"
+                class="form-control input-modern mb-2"
+                placeholder="Tinggi (cm)"
+              />
+              <input
+                type="number"
+                id="weight"
+                class="form-control input-modern mb-3"
+                placeholder="Berat (kg)"
+              />
+
+              <button
+                class="btn btn-primary w-100 fw-bold"
+                onclick="hitungBMI()"
+              >
+                Hitung BMI
+              </button>
+
+              <p id="hasil" class="text-center mt-3 fw-bold"></p>
+
+              <!-- PROGRESS -->
+              <div class="progress mt-3">
+                <div id="bar" class="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TABLE -->
+        <div class="mt-5">
+          <h4 class="text-center mb-3">Riwayat BMI</h4>
+
+          <div class="table-responsive">
+            <table class="table text-center">
+              <thead>
+                <tr>
+                  <th>Nama</th>
+                  <th>Gender</th>
+                  <th>Umur</th>
+                  <th>Tinggi</th>
+                  <th>Berat</th>
+                  <th>BMI</th>
+                  <th>Kategori</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody id="tableData"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+      <p class="mb-0">© 2026 RS Syadam</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="source/bmi.js"></script>
+  </body>
+</html>
